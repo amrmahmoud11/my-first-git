@@ -7,24 +7,21 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.But;
 
 public class conversion {
-  @Given("^you are in Given annotation$")
+	
+	
+ 
+  @Given("I want to convert 98.6 degree Fahrenheit to Celsius")
   public void given() throws Throwable {
   }
 
-  @When("^you are in When annotation$")
+  @When("I put the value of Fahrenheit as 98.6 in text")
   public void when() throws Throwable {
   }
 
-  @Then("^you are in Then annotation$")
+  @Then("It should be converted to 37 degree Celsius")
   public void then() throws Throwable {
   }
 
-  @And("^you are in And annotation$")
-  public void and() throws Throwable {
-  }
-
-  @But("^you are in But annotation$")
-  public void but() throws Throwable {
-  }
+  
 
 }
