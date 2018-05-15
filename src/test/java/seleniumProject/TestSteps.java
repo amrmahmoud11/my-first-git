@@ -9,10 +9,7 @@ import cucumber.api.java.en.When;
 
 public class TestSteps {
 
-
-
-//test
-
+//tests
 WebDriver driver = commonTests.createDriver();
 LoginPage loginPage = new LoginPage(driver);
 CreateaPage createaPage = new CreateaPage(driver);
