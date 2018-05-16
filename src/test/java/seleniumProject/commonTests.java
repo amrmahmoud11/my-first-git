@@ -21,7 +21,7 @@ public class commonTests {
 	public static WebDriver createDriver() {
 		System.setProperty("webdriver.chrome.driver", "/Users/amrmahmoud/Downloads/chromedriver");
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
+		//options.addArguments("--headless");
 		options.addArguments("--lang=en");
 		options.addArguments("--window-size=1920,1080");
 		WebDriver driver = new ChromeDriver(options);

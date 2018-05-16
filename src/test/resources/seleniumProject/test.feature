@@ -21,14 +21,14 @@ Feature: I want to check that when i open the create page it is actually on it
   
   
   Scenario: test facebook search
-  Given I entered the signup data
-  When I click on create page
+  Given I entered my "amr" and "mahmoud"
+  When I click on Create a Page
   Then I should be redirected to the create page
-
+#
   #@tag1
   #Scenario: Convert to Celsius from Fahrenheit
     #Given I want to convert 98.6 Fahrenheit to Celsuis
- #
+ 
     #When I  input the value of Farhrenheit as 98.6 in text field
   #
     #Then It should be converted to Celsuis  as 37 degrees

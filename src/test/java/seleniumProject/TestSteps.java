@@ -22,16 +22,16 @@ WebDriver driver = commonTests.createDriver();
 LoginPage loginPage = new LoginPage(driver);
 CreateaPage createaPage = new CreateaPage(driver);
 //Testing
-	@Given("^I entered the signup data$")
-	public void i_entered_the_signup_data() throws Throwable {
-		loginPage.enterFirstname("amr");
-		loginPage.enterLastname("Mahmoud");
+	@Given("^I entered my \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void i_entered_my_and(String firstname, String lastname) throws Throwable {
+		loginPage.enterFirstname(firstname);
+		loginPage.enterLastname(lastname);
 		loginPage.enterBirthday(4, 1, "1994");
 		loginPage.enterMaleGender();
 	}
 
-	@When("^I click on create page$")
-	public void i_click_on_create_page() throws Throwable {
+	@When("^I click on Create a Page$")
+	public void i_click_on_Create_a_Page() throws Throwable {
 		loginPage.openCreateaPage();
 	}
 
