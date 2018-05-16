@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="seleniumProject.testrunnerTest" time="0.003" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="seleniumProject.testrunnerTest" time="0.174" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="9.0.4+11"/>
@@ -26,7 +26,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/amrmahmoud/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf11699101471731712712.tmp"/>
+    <property name="classworlds.conf" value="/Users/amrmahmoud/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf16950056773968544934.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/amrmahmoud/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="jdk.debug" value="release"/>
@@ -44,7 +44,7 @@
     <property name="java.class.path" value="/Users/amrmahmoud/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.8.2.20171007-0216/jars/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="9"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -61,8 +61,12 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Scenario: test facebook search" name="Given I entered the signup data" time="0.002"/>
-  <testcase classname="Scenario: test facebook search" name="When I click on create page" time="0"/>
-  <testcase classname="Scenario: test facebook search" name="Then I should be redirected to the create page" time="0"/>
-  <testcase classname="Scenario: test facebook search" name="Scenario: test facebook search" time="0.001"/>
+  <testcase classname="| amr | mahmoud |" name="Given I entered my &quot;amr&quot; and &quot;mahmoud&quot;" time="0.003"/>
+  <testcase classname="| amr | mahmoud |" name="When I click on Create a Page" time="0.001"/>
+  <testcase classname="| amr | mahmoud |" name="Then I should be redirected to the create page" time="0"/>
+  <testcase classname="| amr | mahmoud |" name="| amr | mahmoud |" time="0.082"/>
+  <testcase classname="| man | tired |" name="Given I entered my &quot;man&quot; and &quot;tired&quot;" time="0"/>
+  <testcase classname="| man | tired |" name="When I click on Create a Page" time="0"/>
+  <testcase classname="| man | tired |" name="Then I should be redirected to the create page" time="0"/>
+  <testcase classname="| man | tired |" name="| man | tired |" time="0.088"/>
 </testsuite>

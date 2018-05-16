@@ -17,23 +17,17 @@
 ## (Comments)
 #Sample Feature Definition Template
 @tag
-Feature: I want to check that when i open the create page it is actually on it 
-  
-  
-  Scenario: test facebook search
-  Given I entered my "amr" and "mahmoud"
-  When I click on Create a Page
-  Then I should be redirected to the create page
-#
-  #@tag1
-  #Scenario: Convert to Celsius from Fahrenheit
-    #Given I want to convert 98.6 Fahrenheit to Celsuis
- 
-    #When I  input the value of Farhrenheit as 98.6 in text field
-  #
-    #Then It should be converted to Celsuis  as 37 degrees
+Feature: I want to check that when i open the create page it is actually on it
 
+  Scenario Outline: test facebook search
+    Given I entered my "<firstname>" and "<lastname>"
+    When I click on Create a Page
+    Then I should be redirected to the create page
 
+    Examples: 
+      | firstname | lastname |
+      | amr       | mahmoud  |
+      | man       | tired    |
   #@tag2
   #Scenario Outline: Title of your scenario outline
     #Given I want to write a step with <name>
