@@ -41,6 +41,18 @@ CreateaPage createaPage = new CreateaPage(driver);
 		
 		
 	}
+	
+
+	@Then("^I should go back to main page$")
+	public void i_should_go_back_to_main_page() throws Throwable {
+		driver.navigate().back();
+	}
+	
+	@Then("^I should click on People$")
+	public void i_should_click_on_People() throws Throwable {
+	   loginPage.openPeoplePage();
+}
+
 
 		@After
 		public void after(Scenario s) {

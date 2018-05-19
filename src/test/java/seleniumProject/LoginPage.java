@@ -15,7 +15,7 @@ public class LoginPage {
 	String birthyear = "//select[contains(@name, 'birthday_year')]";
 	String malegender = "//span[contains(@class, '_5k_2')][2]/input";
 	String opencreateapage = "//a[contains(text(), 'Create a Page')]";
-	
+	String openPeoplePage = "//a[contains(text(), 'People')]";
 	
 	public LoginPage(WebDriver webDriver) {
 		driver=webDriver;
@@ -45,6 +45,10 @@ public class LoginPage {
 	
 	public void openCreateaPage() {
 		driver.findElement(By.xpath(opencreateapage)).click();
+	}
+	
+	public void openPeoplePage() {
+		driver.findElement(By.xpath(openPeoplePage)).click();
 	}
 		
 	}

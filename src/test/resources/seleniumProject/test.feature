@@ -23,6 +23,8 @@ Feature: I want to check that when i open the create page it is actually on it
     Given I entered my "<firstname>" and "<lastname>"
     When I click on Create a Page
     Then I should be redirected to the create page
+    Then I should go back to main page
+    And I should click on People
 
     Examples: 
       | firstname | lastname |
